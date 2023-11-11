@@ -6,7 +6,7 @@ from pytgcalls.exceptions import NoActiveGroupCall
 
 import config
 from TaitanX import LOGGER, app, userbot
-from TaitanX.core.call import TaitanX
+from TaitanX.core.call import Taitan
 from TaitanX.misc import sudo
 from TaitanX.plugins import ALL_MODULES
 from TaitanX.utils.database import get_banned_users, get_gbanned
@@ -38,17 +38,17 @@ async def init():
         importlib.import_module("TaitanX.plugins" + all_module)
     LOGGER("TaitanX.plugins").info("𝐀𝐥𝐥 𝐅𝐞𝐚𝐭𝐮𝐫𝐞𝐬 𝐋𝐨𝐚𝐝𝐞𝐝 𝐁𝐚𝐛𝐲🥳...")
     await userbot.start()
-    await DAXX.start()
+    await Taitan.start()
     try:
-        await TaitanX.stream_call("https://te.legra.ph/file/29f784eb49d230ab62e9e.mp4")
+        await Taitan.stream_call("https://te.legra.ph/file/29f784eb49d230ab62e9e.mp4")
     except NoActiveGroupCall:
         LOGGER("TaitanX").error(
-            "𝗣𝗹𝗭 𝗦𝗧𝗔𝗥𝗧 𝗬𝗢𝗨𝗥 𝗟𝗢𝗚 𝗚𝗥𝗢𝗨𝗣 𝗩𝗢𝗜𝗖𝗘𝗖𝗛𝗔𝗧\𝗖𝗛𝗔𝗡𝗡𝗘𝗟\n\n𝗗𝗔𝗫𝗫 𝗕𝗢𝗧 𝗦𝗧𝗢𝗣........"
+            "𝗣𝗹𝗭 𝗦𝗧𝗔𝗥𝗧 𝗬𝗢𝗨𝗥 𝗟𝗢𝗚 𝗚𝗥𝗢𝗨𝗣 𝗩𝗢𝗜𝗖𝗘𝗖𝗛𝗔𝗧\𝗖𝗛𝗔𝗡𝗡𝗘𝗟\n\n𝗧𝗔𝗜𝗧𝗔𝗡 𝗕𝗢𝗧 𝗦𝗧𝗢𝗣........"
         )
         exit()
     except:
         pass
-    await DAXX.decorators()
+    await Taitan.decorators()
     LOGGER("TaitanX").info(
         "╔═════ஜ۩۞۩ஜ════╗\n  ☠︎︎𝗠𝗔𝗗𝗘 𝗕𝗬 𝗧𝗔𝗜𝗧𝗔𝗡☠︎︎\n╚═════ஜ۩۞۩ஜ════╝"
     )
