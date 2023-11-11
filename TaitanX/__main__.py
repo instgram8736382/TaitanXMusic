@@ -6,7 +6,7 @@ from pytgcalls.exceptions import NoActiveGroupCall
 
 import config
 from TaitanX import LOGGER, app, userbot
-from TaitanX.core.call import TaitanX
+from TaitanX.core.call import Taitan
 from TaitanX.misc import sudo
 from TaitanX.plugins import ALL_MODULES
 from TaitanX.utils.database import get_banned_users, get_gbanned
