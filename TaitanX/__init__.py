@@ -12,7 +12,7 @@ git()
 dbb()
 heroku()
 
-app = Taitan()
+app = TaitanX()
 api = SafoneAPI()
 userbot = Userbot()
 
