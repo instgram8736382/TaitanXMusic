@@ -63,7 +63,6 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
         [
             InlineKeyboardButton(text="𝗦𝘂𝗽𝗽𝗼𝗿𝘁 💭", url=f"t.me/TaitanXSupport"),
             InlineKeyboardButton(text="𝗨𝗽𝗱𝗮𝘁𝗲𝘀 💬", url=f"t.me/TaitanXBot"),
-            )
         ],
         [
             InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")
@@ -84,7 +83,6 @@ def stream_markup(_, chat_id):
         [
             InlineKeyboardButton(text="𝗦𝘂𝗽𝗽𝗼𝗿𝘁 💭", url=f"t.me/TaitanXSupport"),
             InlineKeyboardButton(text="𝗨𝗽𝗱𝗮𝘁𝗲𝘀 💬", url=f"t.me/TaitanXBot"),
-            )
         ],
         [
             InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")
@@ -105,7 +103,6 @@ def playlist_markup(_, videoid, user_id, ptype, channel, fplay):
         [
             InlineKeyboardButton(text="𝗦𝘂𝗽𝗽𝗼𝗿𝘁 💭", url=f"t.me/TaitanXSupport"),
             InlineKeyboardButton(text="𝗨𝗽𝗱𝗮𝘁𝗲𝘀 💬", url=f"t.me/TaitanXBot"),
-            )
         ],
         [
             InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")
